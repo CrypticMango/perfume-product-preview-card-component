@@ -52,10 +52,10 @@ button:hover {
     border: 1px solid hsl(158, 37%, 13%);
 }
 
-#whole-card {
+#card-text {
     width: 350px;
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #perfume, #regular-price, #card-info {
@@ -63,15 +63,23 @@ button:hover {
 }
 
 #perfume-bottle {
-    width: 100%;
+    width: 350px;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 18px;
+}
+
+#desktop-perfume-bottle {
+    display: none;
 }
 
 #perfume {
     letter-spacing: .3rem;
+   padding-top: 12px;
     margin-bottom: 0px;
     position: relative;
     top: 10px;
+    font-size: 12px;
 }
 
 #card-info {
@@ -98,9 +106,9 @@ button:hover {
 }
 
 #cart-icon {
-    padding-right: 5px;
     position: relative;
     top: 3px;
+    padding-right: 5px;
 }
 
 .attribution {
@@ -114,6 +122,32 @@ button:hover {
 
 /*desktop styling*/
 
-@media (min-width: 1440px) {
+@media (min-width: 900px) {
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 14px 74px;
+    }
+    
+    #whole-card {
+        display: flex;
+    }
 
+    #card-text {
+        width: 300px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    #card-info {
+        padding-right: 35px;
+    }
+
+    #perfume-bottle {
+        display:none;
+    }
+
+    #desktop-perfume-bottle {
+        display: block;
+        width: 300px;
+    }
 }
