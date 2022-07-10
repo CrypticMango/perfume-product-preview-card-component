@@ -123,6 +123,10 @@ button:hover {
 /*desktop styling*/
 
 @media (min-width: 900px) {
+    img {
+        border-radius: 10px 0px 0px 10px;
+    }
+    
     button {
         display: block;
         margin: 0 auto;
@@ -136,6 +140,7 @@ button:hover {
     #card-text {
         width: 300px;
         padding: 10px 10px 10px 10px;
+        border-radius: 0px 10px 10px 0px;
     }
 
     #card-info {
